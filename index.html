@@ -127,7 +127,7 @@
                         </div>
                         <div class="modal-body" style="color:black">
                           <form>
-                              <div class="form-group form-row">
+                              <div class="form-group form-row align-items-center">
                                   <div class="col 12 col-sm-3">
                                       <p>
                                         Number of Guests
@@ -165,21 +165,24 @@
                                    </div>
                                   </div>
                               </div>
-                              <div class="form-group form-row">
-                                <div class="col-sm-3">
+                              <div class="form-group form-row align-items-center">
+                                <div class="col-12 col-sm-3">
+                                  <p>
+                                    Section
+                                  </p>
                                 </div>
                                 <div class="col-12 col-sm-9 order-sm-last">
                                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                      <label class="btn btn-secondary btn1">
-                                          <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                      <label class="btn btn-success active">
+                                          <input type="radio" checked name="options" id="option1" autocomplete="off"> Non-Smoking
                                       </label>
-                                      <label class="btn btn-secondary btn2">
+                                      <label class="btn btn-danger">
                                         <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
                                       </label>
                                   </div>
                                 </div>
                               </div>
-                              <div class="form-group form-row">
+                              <div class="form-group form-row align-items-center">
                                 <div class="col 12 col-sm-3">
                                   <p>
                                     Date and Time
@@ -192,11 +195,12 @@
                                     <input type="text" class="form-control" id="inpTime" name="inpTime" placeholder="Time">
                                 </div>
                               </div>
-                              <div class="form-group form-row">
+                              <div class="form-group form-row align-items-center">
                                 <div class="col-sm-3">
                                 </div>
                                 <div class="col-auto">
-                                  <button type="submit" class="btn btn-primary">Reserve</button>
+                                  <button type="submit" class="btn btn-secondary" data-dismiss="modal"> Cancel </button>
+                                  <button  class="btn btn-primary">Reserve</button>
                                 </div>
                               </div>
                           </form>
@@ -480,6 +484,7 @@
     <script>
        $(document).ready(function(){
            $('[data-toggle="tooltip"]').tooltip();
+           $()
        });
    </script>
 </body>
